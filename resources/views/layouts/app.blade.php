@@ -30,6 +30,10 @@
     </main>
 
     <footer class="bg-gray-200 py-4 mt-8">
+        <div class="links">
+            <a href="{{ route('privacy') }}">Privacy Policy</a>
+            <a href="{{ route('terms') }}">Terms of Service</a>
+        </div>
         <div class="container mx-auto px-4">
             <p class="text-center text-gray-600">&copy; {{ date('Y') }} Story Builder App. All rights reserved.</p>
         </div>

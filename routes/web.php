@@ -21,3 +21,7 @@ Route::resource('stories', StoryController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::view('/privacy', 'privacy')->name('privacy');
+Route::view('/terms', 'terms')->name('terms');
