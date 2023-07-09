@@ -1,7 +1,7 @@
 
 
 <div class="flex justify-center items-center h-screen">
-    <div class="max-w-md w-full bg-white rounded-lg shadow-lg">
+    <div class="max-w-lg w-full bg-white rounded-lg shadow-lg">
       <div class="p-6">
         <h1 class="text-3xl font-bold mb-4 text-blue-500 text-center">Create a Story</h1>
         
@@ -21,7 +21,7 @@
         
         <!-- Save Button -->
         <div class="flex justify-center">
-          <button wire:click="saveStory" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Save Story</button>
+          <button wire:click="saveStory" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Save</button>
         </div>
       </div>
     </div>

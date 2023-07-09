@@ -21,6 +21,7 @@ class StoryController extends Controller
 
     public function store(Request $request)
     {
+        
         $request->validate([
             'title' => 'required',
             'content' => 'required',
@@ -29,6 +30,7 @@ class StoryController extends Controller
         $story = new Story();
         $story->title = $request->input('title');
         $story->content = $request->input('content');
+        $story->user_id = Auth::user();
         $story->save();
 
         return redirect()->route('stories.index')->with('message', 'Story created successfully.');

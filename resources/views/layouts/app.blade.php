@@ -18,22 +18,10 @@
 </head>
 
 <body>
-    <header>
-        <!-- Navigation Bar -->
-        <nav class="bg-blue-500 py-4">
-            <div class="container mx-auto px-4">
-                <div class="flex justify-between items-center">
-                    <a href="{{ route('home') }}" class="text-white font-bold text-lg">Story Builder App</a>
-                    <div>
-                        <a href="{{ route('stories.index') }}"
-                            class="text-white hover:text-blue-200 px-3 py-1 rounded">All Stories</a>
-                        <a href="{{ route('stories.create') }}"
-                            class="text-blue-800 hover:text-blue-900 px-3 py-1 rounded bg-white ">Create Story</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+   
+
+
+    @include('layouts.partials.navigation')
 
     <main>
         <div class="container mx-auto px-4 mt-8">

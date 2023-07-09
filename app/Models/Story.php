@@ -12,7 +12,6 @@ class Story extends Model
     protected $fillable = [
           'title',
           'content',
-          'user_id',
           ];
    
     public function sections()
