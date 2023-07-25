@@ -1,26 +1,24 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoryController;
-
+use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
 
-Route::get('/', function(){
-    return view('home');
-});
 
-Route::get('/', function(){
-    return view('home');
-})->name('home');
 // Story Routes
 Route::resource('stories', StoryController::class);
 
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/landing', function(){
+      return view('landing.main');
+});
 
 
 Route::view('/privacy', 'privacy')->name('privacy');

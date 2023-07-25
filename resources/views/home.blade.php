@@ -3,6 +3,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <livewire:flash-message>
     <!-- Hero Section -->
     <div class="bg-blue-500 py-20" id="hero">
         <div class="container mx-auto px-4">

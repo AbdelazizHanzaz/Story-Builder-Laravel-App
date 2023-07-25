@@ -18,12 +18,12 @@ class StoryCreate extends Component
     public function saveStory()
     {
         $dataValidated = $this->validate();
-
-        // Story::create([
-        //     'title' => $this->title,
-        //     'content' => $this->content,
-        // ]);
-        auth()->user()->stories()->create($dataValidated);
+        Story::create([
+            'title' => $dataValidated['title'],
+            'content' => $dataValidated['content'],
+            'user_id' => auth()->user()->id
+        ]);
+        
 
         session()->flash('message', 'Story created successfully.');
 

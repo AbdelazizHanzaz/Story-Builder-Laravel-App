@@ -10,10 +10,10 @@
             <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
                 Welcome
             </a>
-            <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
+            <a href="/#about" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">
                 About
             </a>
-            <a href="#contact-us" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300">
+            <a href="/#contact-us" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300">
                 Contact
             </a>
             @auth
